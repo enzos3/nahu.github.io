@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="">
     <title>Nahu Barber Shop</title>
-  <link rel="stylesheet" href="/_astro/index.24ae36c4.css" /><script type="module" src="/_astro/hoisted.a409b806.js"></script></head>
+  <link rel="stylesheet" href="/_astro/index.a098d784.css" /><script type="module" src="/_astro/hoisted.03219f17.js"></script></head>
   <body>
     
   <header id="landing-header" class="py-4 md:px-10 px-2 flex items-center fixed top-0 w-full justify-between z-40 astro-3EF6KSR2">
@@ -70,7 +70,7 @@
     <header>
       <h2 class="text-white pt-40 text-[40px] font-medium">¿Que ofrecemos?</h2>
     </header>
-    <footer class="flex flex-col flex-grow justify-end pb-20 md:pb-0 md:pt-20 md:justify-normal">
+    <footer class="flex flex-col flex-grow justify-end pb-20">
       <div>
         <button id="open-popup" class="border-2 border-white bg-white/5 backdrop-blur-xl rounded text-lg text-white px-16 py-2 inline-block hover:bg-white hover:text-black transition-colors">Pedir un turno</button>
       </div>
@@ -99,8 +99,8 @@
     <img src="/barber1.jpg" alt="Rural" class="h-full w-full object-cover object-center">
   </div>
 
-  <div id="popup-card" class="hidden fixed top-0 left-0 w-full h-full flex justify-center sm:items-start z-50 bg-white/10 backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl astro-EQ4SMZQD">
-  <div id="popup-container" class="bg-white/50 bg-opacity-90 p-6 backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl astro-EQ4SMZQD">
+  <div id="popup-card" class="hidden fixed top-0 left-0 w-full h-full flex justify-center sm:items-start z-50 rounded-2xl ml-4 astro-EQ4SMZQD">
+  <div id="popup-container" class="bg-white/50 bg-opacity-90 p-6 backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl pb-10 astro-EQ4SMZQD">
     <h2 class="text-xl font-semibold mb-4 calendario astro-EQ4SMZQD">Calendario</h2>
     <div class="calendar astro-EQ4SMZQD">
       <div class="calendar-header flex justify-between items-center mb-4 astro-EQ4SMZQD">
@@ -116,7 +116,7 @@
           </svg>
         </button>
       </div>
-      <div class="calendar-body grid grid-cols-7 gap-0 w-96 md:h-96 h-64 items-center astro-EQ4SMZQD">
+      <div class="calendar-body grid grid-cols-7 gap-0 w-[20rem] md:h-96 h-64 items-center astro-EQ4SMZQD">
         <!-- Calendar days of the week labels -->
 
         <div class="day-label text-center text-gray-500 astro-EQ4SMZQD" style="grid-column: span 1;">
@@ -147,38 +147,77 @@
     </div>
     <button id="close-popup" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded astro-EQ4SMZQD">Cerrar</button>
   </div>
-  <div id="card-container" class="mt-4 astro-EQ4SMZQD">
+  <div id="card-container" class="mt-1 astro-EQ4SMZQD">
     <div id="day-card" class="bg-orange-500 bg-opacity-40 p-6 w-[20vw] backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl astro-EQ4SMZQD" style="display: none;">
       <h1 class="text-xl font-semibold astro-EQ4SMZQD" id="card-day-text">Day X</h1>
-      <div id="schedule" class="mt-4 astro-EQ4SMZQD">
+      <div id="schedule" class="mt-0 astro-EQ4SMZQD">
         <h2 class="text-lg font-semibold mb-2 astro-EQ4SMZQD">Horarios Disponibles</h2>
         <div class="schedule-hour card-content astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">08:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">08:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">09:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">09:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">10:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">10:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">11:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">11:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">12:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">12:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">17:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">17:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">18:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">18:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">19:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">19:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="card-container astro-4LWPU6BE">
+  <h2 class="astro-4LWPU6BE">Turno</h2>
+  <form class="hidden-form astro-4LWPU6BE">
+    <div class="form-group astro-4LWPU6BE">
+      <label for="name" class="astro-4LWPU6BE">Nombre completo:</label>
+      <input type="text" id="name" name="name" required class="astro-4LWPU6BE">
+    </div>
+
+    <div class="form-group astro-4LWPU6BE">
+      <label for="phone" class="astro-4LWPU6BE">Telefono:</label>
+      <input type="number" id="phone" name="phone" required class="astro-4LWPU6BE">
+    </div>
+
+    <div class="form-group astro-4LWPU6BE">
+      <label for="barber" class="astro-4LWPU6BE">Barbero:</label>
+      <select id="barber" name="barber" class="astro-4LWPU6BE">
+        <option value="barber0" class="astro-4LWPU6BE">-ELIJE UN BARBERO-</option>
+        <option value="barber1" class="astro-4LWPU6BE">Nahu</option>
+        <option value="barber2" class="astro-4LWPU6BE">Nico</option>
+      </select>
+    </div>
+    <div class="buttons astro-4LWPU6BE">
+      <button class="confirm astro-4LWPU6BE" type="submit">Reservar</button>
+      <button id="close-appoint" class="astro-4LWPU6BE">Cancelar</button>
+    </div>
+  </form>
+
+  
+
+  
 </div>
 </section>
     </div>
@@ -200,8 +239,8 @@
   </div>
 </section>
     </div>
-    <div id="popup-card" class="hidden fixed top-0 left-0 w-full h-full flex justify-center sm:items-start z-50 bg-white/10 backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl astro-EQ4SMZQD">
-  <div id="popup-container" class="bg-white/50 bg-opacity-90 p-6 backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl astro-EQ4SMZQD">
+    <div id="popup-card" class="hidden fixed top-0 left-0 w-full h-full flex justify-center sm:items-start z-50 rounded-2xl ml-4 astro-EQ4SMZQD">
+  <div id="popup-container" class="bg-white/50 bg-opacity-90 p-6 backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl pb-10 astro-EQ4SMZQD">
     <h2 class="text-xl font-semibold mb-4 calendario astro-EQ4SMZQD">Calendario</h2>
     <div class="calendar astro-EQ4SMZQD">
       <div class="calendar-header flex justify-between items-center mb-4 astro-EQ4SMZQD">
@@ -217,7 +256,7 @@
           </svg>
         </button>
       </div>
-      <div class="calendar-body grid grid-cols-7 gap-0 w-96 md:h-96 h-64 items-center astro-EQ4SMZQD">
+      <div class="calendar-body grid grid-cols-7 gap-0 w-[20rem] md:h-96 h-64 items-center astro-EQ4SMZQD">
         <!-- Calendar days of the week labels -->
 
         <div class="day-label text-center text-gray-500 astro-EQ4SMZQD" style="grid-column: span 1;">
@@ -248,38 +287,77 @@
     </div>
     <button id="close-popup" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded astro-EQ4SMZQD">Cerrar</button>
   </div>
-  <div id="card-container" class="mt-4 astro-EQ4SMZQD">
+  <div id="card-container" class="mt-1 astro-EQ4SMZQD">
     <div id="day-card" class="bg-orange-500 bg-opacity-40 p-6 w-[20vw] backdrop-filter backdrop-blur-lg shadow-lg rounded-2xl astro-EQ4SMZQD" style="display: none;">
       <h1 class="text-xl font-semibold astro-EQ4SMZQD" id="card-day-text">Day X</h1>
-      <div id="schedule" class="mt-4 astro-EQ4SMZQD">
+      <div id="schedule" class="mt-0 astro-EQ4SMZQD">
         <h2 class="text-lg font-semibold mb-2 astro-EQ4SMZQD">Horarios Disponibles</h2>
         <div class="schedule-hour card-content astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">08:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">08:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">09:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">09:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">10:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">10:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">11:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">11:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">12:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">12:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">17:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">17:00:</span>
+          <button class="text-red-700 pointer-events-none astro-EQ4SMZQD" id="open-appoint">Ocupado</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">18:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">18:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
         <div class="schedule-hour astro-EQ4SMZQD">
-          <span class="schedule-time astro-EQ4SMZQD">19:00:</span> Libre
+          <span class="schedule-time astro-EQ4SMZQD">19:00:</span>
+          <button class="px-6 bg-blue-500 rounded astro-EQ4SMZQD" id="open-appoint">Reservar</button>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="card-container astro-4LWPU6BE">
+  <h2 class="astro-4LWPU6BE">Turno</h2>
+  <form class="hidden-form astro-4LWPU6BE">
+    <div class="form-group astro-4LWPU6BE">
+      <label for="name" class="astro-4LWPU6BE">Nombre completo:</label>
+      <input type="text" id="name" name="name" required class="astro-4LWPU6BE">
+    </div>
+
+    <div class="form-group astro-4LWPU6BE">
+      <label for="phone" class="astro-4LWPU6BE">Telefono:</label>
+      <input type="number" id="phone" name="phone" required class="astro-4LWPU6BE">
+    </div>
+
+    <div class="form-group astro-4LWPU6BE">
+      <label for="barber" class="astro-4LWPU6BE">Barbero:</label>
+      <select id="barber" name="barber" class="astro-4LWPU6BE">
+        <option value="barber0" class="astro-4LWPU6BE">-ELIJE UN BARBERO-</option>
+        <option value="barber1" class="astro-4LWPU6BE">Nahu</option>
+        <option value="barber2" class="astro-4LWPU6BE">Nico</option>
+      </select>
+    </div>
+    <div class="buttons astro-4LWPU6BE">
+      <button class="confirm astro-4LWPU6BE" type="submit">Reservar</button>
+      <button id="close-appoint" class="astro-4LWPU6BE">Cancelar</button>
+    </div>
+  </form>
+
+  
+
+  
 </div>
   </main>
 
